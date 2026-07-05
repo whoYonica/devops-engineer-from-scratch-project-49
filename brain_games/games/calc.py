@@ -1,8 +1,6 @@
 import random
 
-
 from brain_games.engine import run
-
 
 DESCRIPTION = "What is the result of the expression?"
 

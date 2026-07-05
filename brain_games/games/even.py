@@ -1,8 +1,6 @@
 import random
 
-
 from brain_games.engine import run
-
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
