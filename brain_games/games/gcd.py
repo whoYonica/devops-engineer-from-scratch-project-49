@@ -1,8 +1,6 @@
 import random
 
-
 from brain_games.engine import run
-
 
 DESCRIPTION = 'Find the greates common divisor pf given numbers.'
 

@@ -1,8 +1,6 @@
 import random
 
-
 from brain_games.engine import run
-
 
 DESCRIPTION = 'What number is missing in the progression?'
 

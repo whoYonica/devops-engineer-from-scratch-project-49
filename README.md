@@ -33,3 +33,5 @@
 
 
 [![asciicast](https://asciinema.org/a/EI6t0FAbUqrjVdoW.svg)](https://asciinema.org/a/EI6t0FAbUqrjVdoW)
+
+[![asciicast](https://asciinema.org/a/ldi8d97eJIc8mvcq.svg)](https://asciinema.org/a/ldi8d97eJIc8mvcq)
