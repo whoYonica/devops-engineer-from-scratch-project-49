@@ -2,7 +2,7 @@ import random
 
 from brain_games.engine import run
 
-DESCRIPTION = 'Find the greates common divisor pf given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gcd(first_number, second_number):
