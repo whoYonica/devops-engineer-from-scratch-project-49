@@ -6,7 +6,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "prompt>=0.4.1",
+
 ]
+authors = [
+    {name = "Helen"}
 
 [build-system]
 requires = ["hatchling"]

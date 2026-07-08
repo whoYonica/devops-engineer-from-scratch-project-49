@@ -2,7 +2,6 @@ import random
 
 from brain_games.engine import run
 
-
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
