@@ -14,7 +14,7 @@ def run(description, question_and_answer):
     for _ in range(ROUNDS):
         question, correct_answer = question_and_answer()
 
-        print(f'Quesion: {question}')
+        print(f'Question: {question}')
 
         answer = prompt.string('Your answer: ')
 
