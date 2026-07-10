@@ -11,16 +11,54 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=whoYonica_devops-engineer-from-scratch-project-49&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=whoYonica_devops-engineer-from-scratch-project-49)
 
-# First project
+
+
+## Description
+
+Brain Games is a collection of five console games that help practice arithmetic and logical thinking. Each game asks the player a series of questions. To win, you need to answer three questions correctly in a row.
+
+## Requirements
+
+- Python 3.12+
+- uv
 
 ## Installation
+
+Clone the repository:
 
 ```bash
 git clone git@github.com:whoYonica/devops-engineer-from-scratch-project-49.git
 cd devops-engineer-from-scratch-project-49
+```
+
+Install dependencies:
+
+```bash
 uv sync
+```
+
+Build the package:
+
+```bash
 uv build
+```
+
+Install the package:
+
+```bash
 uv tool install --force dist/*.whl
+```
+
+## Usage
+
+Run one of the following commands:
+
+```bash
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
 ```
 
 ## Check if the number is even:
