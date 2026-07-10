@@ -1,34 +1,21 @@
 import random
 
-from brain_games.engine import run
-
-DESCRIPTION = "What is the result of the expression?"
-
-
-def calculate(first_number, second_number, operator):
-    match operator:
-        case '+':
-            return first_number + second_number
-        case '-':
-            return first_number - second_number
-        case '*':
-            return first_number * second_number
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def question_and_answer():
-    first_number = random.randint(1, 100)
-    second_number = random.randint(1, 100)
+    number1 = random.randint(1, 100)
+    number2 = random.randint(1, 100)
+    operation = random.choice(['+', '-', '*'])
 
-    operator = random.choice(['+', '-', '*'])
+    question = f'{number1} {operation} {number2}'
 
-    question = f'{first_number} {operator} {second_number}'
-
-    correct_answer = str(
-        calculate(first_number, second_number, operator)
-    )
+    match operation:
+        case '+':
+            correct_answer = str(number1 + number2)
+        case '-':
+            correct_answer = str(number1 - number2)
+        case '*':
+            correct_answer = str(number1 * number2)
 
     return question, correct_answer
-
-
-def run_game():
-    run(DESCRIPTION, question_and_answer)

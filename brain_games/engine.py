@@ -1,18 +1,18 @@
 import prompt
 
+
+from brain_games.cli import welcome_user
+
 ROUNDS = 3
 
 
-def run(description, question_and_answer):
-    print('Welcome to the Brain Games!')
+def run(game):
+    name = welcome_user()
 
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-
-    print(description)
+    print(game.DESCRIPTION)
 
     for _ in range(ROUNDS):
-        question, correct_answer = question_and_answer()
+        question, correct_answer = game.question_and_answer()
 
         print(f'Question: {question}')
 
@@ -27,5 +27,5 @@ def run(description, question_and_answer):
             )
             print(f"Let's try again, {name}!")
             return
-    
+
     print(f'Congratulations, {name}!')
